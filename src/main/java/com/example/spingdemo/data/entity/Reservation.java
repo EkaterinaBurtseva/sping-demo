@@ -1,5 +1,4 @@
-package com.frankmoley.lil.learningspring.data.entity;
-
+package com.example.spingdemo.data.entity;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

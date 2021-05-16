@@ -1,6 +1,6 @@
 package com.example.spingdemo.data.repository;
 
-import com.frankmoley.lil.learningspring.data.entity.Guest;
+import com.example.spingdemo.data.entity.Guest;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
