@@ -1,5 +1,7 @@
 package com.example.spingdemo;
 
+import com.example.spingdemo.data.entity.Guest;
+import com.example.spingdemo.data.entity.Reservation;
 import com.example.spingdemo.data.entity.Room;
 import com.example.spingdemo.data.repository.GuestRepository;
 import com.example.spingdemo.data.repository.ReservationRepository;
@@ -37,7 +39,7 @@ public class SpingDemoApplication {
         private GuestRepository guestRepository;
 
         @GetMapping
-        public Iterable<com.frankmoley.lil.learningspring.data.entity.Guest> getGuests(){return this.guestRepository.findAll();}
+        public Iterable<Guest> getGuests(){return this.guestRepository.findAll();}
     }
 
     @RestController
@@ -47,7 +49,7 @@ public class SpingDemoApplication {
         private ReservationRepository reservationRepository;
 
         @GetMapping
-        public Iterable<com.frankmoley.lil.learningspring.data.entity.Reservation> getReservations(){return this.reservationRepository.findAll();}
+        public Iterable<Reservation> getReservations(){return this.reservationRepository.findAll();}
     }
 
 }
